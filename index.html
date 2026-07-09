@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-     <link rel="icon" type="image/png" href="src/assets/TVLogo.png" />
+    <!-- Vite automatically replaces %BASE_URL% with your repository subfolder path -->
+    <link rel="icon" type="image/png" href="%BASE_URL%TVLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
@@ -11,6 +11,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Remove the absolute leading slash from the main entry script -->
+    <script type="module" src="src/main.jsx"></script>
   </body>
 </html>
