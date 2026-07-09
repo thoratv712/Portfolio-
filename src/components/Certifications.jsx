@@ -147,11 +147,17 @@ function Certifications() {
 
                 {/* Verify Button */}
                 <div className='mt-4'>
-                  <button className='flex items-center gap-2 text-red-700 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 transition-colors' onClick={() => window.open('SEED_Merit_Certificate.pdf', '_blank')}>
-                    <ExternalLink size={16} />
-                    View Certificate
-                  </button>
-                </div>
+  <a 
+    href={`${import.meta.env.BASE_URL}SEED_Merit_Certificate.pdf`} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className='inline-flex items-center gap-2 text-red-700 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 transition-colors'
+  >
+    <ExternalLink size={16} />
+    View Certificate
+  </a>
+</div>
+
               </div>
             </div>
           ))}

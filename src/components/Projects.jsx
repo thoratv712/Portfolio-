@@ -9,6 +9,13 @@ import {
 } from "lucide-react";
 import { GitHubIcon } from "./Home";
 
+import fakeProductImage from "../assets/fake-product.png";
+import hotelRoomBookingImage from "../assets/hotel-room-booking.png";
+import burgerImage from "../assets/burger.png";
+import expenseTrackerImage from "../assets/expense_tracker.png";
+import portfolioHomeImage from "../assets/portfolio_home.png";  
+
+
 function Projects() {
   const projects = [
     {
@@ -27,7 +34,7 @@ function Projects() {
       github: "https://github.com/thoratv712/fake-product-identification-system",
       icon: Shield,
       color: "from-blue-600 to-blue-800",
-      image: "fake-product.png",
+      image: fakeProductImage,
       imageAlt: "Fake Product Identification System - Blockchain based product verification"
     },
     {
@@ -46,7 +53,7 @@ function Projects() {
       github: "https://github.com/vaishnavithorat/dreamstay-hotel",
       icon: Hotel,
       color: "from-green-600 to-green-800",
-      image: "hotel-room-booking.png",
+      image: hotelRoomBookingImage,
       imageAlt: "DreamStay - Hotel Booking System Interface"
     },
     {
@@ -65,7 +72,7 @@ function Projects() {
       github: "https://github.com/thoratv712/Burger-Web-Application",
       icon: Utensils,
       color: "from-yellow-600 to-orange-600",
-      image: "burger.png",
+      image: burgerImage,
       imageAlt: "Burger House - Burger ordering web application"
     },
     {
@@ -84,7 +91,7 @@ function Projects() {
       github: "https://github.com/thoratv712/expense-tracker-frontend",
       icon: Brain,
       color: "from-purple-600 to-purple-800",
-      image: "expense_tracker.png",
+      image: expenseTrackerImage,
       imageAlt: "AI Expense Tracker - Smart expense management dashboard"
     },
     {
@@ -103,7 +110,7 @@ function Projects() {
       github: "https://github.com/thoratv712/portfolio",
       icon: Layout,
       color: "from-red-600 to-red-800",
-      image: "portfolio_home.png",
+      image: portfolioHomeImage,
       imageAlt: "Personal Portfolio - ReactJS portfolio website"
     },
   ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Send } from "lucide-react";
+import profile from "../assets/profileImg.png"; // Adjust the path as necessary
 
 export const GitHubIcon = () => (
   <svg
@@ -75,10 +76,10 @@ function Home() {
             </Link>
 
             <a
-              href="/resume"
-              download
+               href={`${import.meta.env.BASE_URL}resume.pdf`} 
+               download="Vaishnavi_Thorat_Resume.pdf"
               className="bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-md transition"
-            onClick={() => {window.open('Vaishnavi_Thorat_Resume.pdf', '_blank');}}
+    
             >
               Download Resume
             </a>
@@ -134,7 +135,7 @@ function Home() {
 
           
           <img
-            src="profileImg.png"
+            src={profile}
             alt="Vaishnavi Thorat"
             className="w-[400px] rounded-full shadow-2xl"
           />

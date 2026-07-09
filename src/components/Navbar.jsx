@@ -88,10 +88,10 @@ function Navbar() {
             </Link>
 
             <a
-              href="/resume"
-              download
+               href={`${import.meta.env.BASE_URL}resume.pdf`} 
+               download="Vaishnavi_Thorat_Resume.pdf"
               className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors"
-              onClick={() => {window.open('Vaishnavi_Thorat_Resume.pdf', '_blank');}}
+             
             >
               Download Resume
             </a>
@@ -167,10 +167,10 @@ function Navbar() {
               </Link>
 
               <a
-                href="/resume"
-                download
+                href={`${import.meta.env.BASE_URL}resume.pdf`} 
+                download="Vaishnavi_Thorat_Resume.pdf"
                 className="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md text-center transition-colors"
-                onClick={() => {window.open('Vaishnavi_Thorat_Resume.pdf', '_blank'); setIsOpen(false);}}
+                
               >
                 Download Resume
               </a>
