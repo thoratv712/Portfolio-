@@ -140,17 +140,19 @@ function Projects() {
                 key={index}
                 className="bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-md hover:shadow-xl transition duration-300 overflow-hidden flex flex-col"
               >
+                
                {/* Project Image */}
-<div className="w-full h-48 sm:h-64 bg-zinc-100 dark:bg-zinc-800 relative overflow-hidden flex items-center justify-center p-2"> 
-  {/* Added h-48 sm:h-64 height constraints, flex layout centering, and padding */}
+{/* Project Image Container */}
+<div className="w-full bg-zinc-100 dark:bg-zinc-800 border-b border-zinc-200 dark:border-zinc-700 relative overflow-hidden flex items-center justify-center">
+  {/* Removed absolute heights like h-full / sm:h-76 to let the image dictate its full natural space */}
   <img
     src={project.image}
     alt={project.imageAlt}
-    className="w-full h-full object-contain" // ◄ Changed from object-cover to object-contain
+    className="w-full h-auto object-contain block" // ◄ w-full and h-auto keeps it proportional and fully visible
     onError={(e) => {
       e.target.style.display = 'none';
       e.target.parentElement.innerHTML = `
-        <div class="w-full h-full flex items-center justify-center bg-gradient-to-r ${project.color} p-5">
+        <div class="w-full h-48 flex items-center justify-center bg-gradient-to-r ${project.color} p-5">
           <div class="text-center text-white">
             <p class="text-sm font-medium">${project.title}</p>
             <p class="text-xs opacity-80">Project Preview</p>
@@ -160,6 +162,7 @@ function Projects() {
     }}
   />
 </div>
+
 
 
                 {/* Card Body */}
