@@ -63,8 +63,8 @@ function Contact() {
     {
       icon: <Phone size={24} />,
       label: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      value: '+91 93250 42123',
+      link: 'tel:+919325042123',
       color: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
     },
     {
