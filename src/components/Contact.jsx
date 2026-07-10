@@ -70,7 +70,7 @@ function Contact() {
     {
       icon: <MapPin size={24} />,
       label: 'Location',
-      value: 'Pune, Maharashtra, India',
+      value: 'Sangamner, Maharashtra, India',
       link: '#',
       color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
     }
