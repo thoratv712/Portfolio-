@@ -88,7 +88,9 @@ function Navbar() {
             </Link>
 
             <a
-               href={`${import.meta.env.BASE_URL}resume.pdf`} 
+               href={`${import.meta.env.BASE_URL}Vaishnavi_Thorat_Resume.pdf`} 
+               target="_blank"
+               rel="noopener noreferrer"
                download="Vaishnavi_Thorat_Resume.pdf"
               className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors"
              
@@ -167,8 +169,10 @@ function Navbar() {
               </Link>
 
               <a
-                href={`${import.meta.env.BASE_URL}resume.pdf`} 
+                href={`${import.meta.env.BASE_URL}Vaishnavi_Thorat_Resume.pdf`} 
                 download="Vaishnavi_Thorat_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md text-center transition-colors"
                 
               >
