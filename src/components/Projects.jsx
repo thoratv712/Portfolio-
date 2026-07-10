@@ -140,26 +140,27 @@ function Projects() {
                 key={index}
                 className="bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-md hover:shadow-xl transition duration-300 overflow-hidden flex flex-col"
               >
-                {/* Project Image */}
-                <div className=" w-full h-full sm:h-76 sm:w-full bg-gradient-to-r from-zinc-200 to-zinc-300 dark:from-zinc-700 dark:to-zinc-600 relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.parentElement.innerHTML = `
-                        <div class="w-full h-full flex items-center justify-center bg-gradient-to-r ${project.color} p-5">
-                          <div class="text-center text-white">
-                            <${Icon.name} size={48} className="mx-auto mb-2" />
-                            <p class="text-sm font-medium">${project.title}</p>
-                            <p class="text-xs opacity-80">Project Preview</p>
-                          </div>
-                        </div>
-                      `;
-                    }}
-                  />
-                </div>
+               {/* Project Image */}
+<div className="w-full h-48 sm:h-64 bg-zinc-100 dark:bg-zinc-800 relative overflow-hidden flex items-center justify-center p-2"> 
+  {/* Added h-48 sm:h-64 height constraints, flex layout centering, and padding */}
+  <img
+    src={project.image}
+    alt={project.imageAlt}
+    className="w-full h-full object-contain" // ◄ Changed from object-cover to object-contain
+    onError={(e) => {
+      e.target.style.display = 'none';
+      e.target.parentElement.innerHTML = `
+        <div class="w-full h-full flex items-center justify-center bg-gradient-to-r ${project.color} p-5">
+          <div class="text-center text-white">
+            <p class="text-sm font-medium">${project.title}</p>
+            <p class="text-xs opacity-80">Project Preview</p>
+          </div>
+        </div>
+      `;
+    }}
+  />
+</div>
+
 
                 {/* Card Body */}
                 <div className="p-6 flex-1 flex flex-col">
