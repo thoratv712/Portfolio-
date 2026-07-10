@@ -76,8 +76,10 @@ function Home() {
             </Link>
 
             <a
-               href={`${import.meta.env.BASE_URL}resume.pdf`} 
-               download="Vaishnavi_Thorat_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Vaishnavi_Thorat_Resume.pdf`} 
+                download="Vaishnavi_Thorat_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               className="bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-md transition"
     
             >
