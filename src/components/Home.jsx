@@ -76,7 +76,7 @@ function Home() {
             </Link>
 
             <a
-              href={`${import.meta.env.BASE_URL}Vaishnavi_Thorat_Resume.pdf`} 
+                href={`${import.meta.env.BASE_URL}Vaishnavi_Thorat_Resume.pdf`} 
                 download="Vaishnavi_Thorat_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
