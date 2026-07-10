@@ -141,7 +141,7 @@ function Projects() {
                 className="bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-md hover:shadow-xl transition duration-300 overflow-hidden flex flex-col"
               >
                 {/* Project Image */}
-                <div className=" w-full h-full sm:h-66 sm:w-full bg-gradient-to-r from-zinc-200 to-zinc-300 dark:from-zinc-700 dark:to-zinc-600 relative overflow-hidden">
+                <div className=" w-full h-full sm:h-76 sm:w-full bg-gradient-to-r from-zinc-200 to-zinc-300 dark:from-zinc-700 dark:to-zinc-600 relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.imageAlt}
