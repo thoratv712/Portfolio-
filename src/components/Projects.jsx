@@ -10,7 +10,7 @@ import {
 import { GitHubIcon } from "./Home";
 
 import fakeProductImage from "../assets/fake-product.png";
-import hotelRoomBookingImage from "../assets/hotel-room-booking.png";
+import hotelRoomBookingImage from "../assets/DreamStay_HomePage_SS.png";
 import burgerImage from "../assets/burger.png";
 import expenseTrackerImage from "../assets/expense_tracker.png";
 import portfolioHomeImage from "../assets/portfolio_home.png";  
@@ -50,7 +50,7 @@ function Projects() {
         "Secure payment integration",
         "Admin dashboard for hotel management",
       ],
-      github: "https://github.com/vaishnavithorat/dreamstay-hotel",
+      github: "https://github.com/thoratv712/DreamStay",
       icon: Hotel,
       color: "from-green-600 to-green-800",
       image: hotelRoomBookingImage,
