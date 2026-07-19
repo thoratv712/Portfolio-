@@ -101,7 +101,7 @@ function Home() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/vaishnavi-thorat/"
+              href="https://www.linkedin.com/in/vaishnavithorat/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
